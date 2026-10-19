@@ -3,6 +3,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Macro_DB_Settings(BaseSettings):
     '''
     Data validation of the environment variables using PyDantic.
+    To be generalized for every type of databse (check @classmethod alternative)
     '''
     POSTGRES_SERVER: str
     POSTGRES_PORT : int 
